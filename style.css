@@ -1,25 +1,60 @@
 
+.block {
+}
 
-@media (max-width: 480px) {
+
+
+ @media (max-width: 480px) {             /* SMALL */ 
     body { 
-        background-color: red;
+        background-color: brown;
         font-size: 10px;
     }
+    
     #medium {                   
         display: none;
       }
     #large {
         display: none;
     }
-    #m {display: none;
+    #m {
+        display: none;
     }
-    #l {display: none;
+    #l {
+        display: none;
     }
+    .container {
+        height: 100%;
+        width: 100%;
+        margin: 10px auto;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+    }
+    .block1 {   
+        background:rgb(230, 230, 122);
+        height: 100%;
+        width: 33%;
+        display: block;
+    }
+    .block2 {
+        background: rgb(145, 145, 22);
+        height: 100%;
+        width: 33%;
+        display: block;
+    }
+    .block3 {
+        background: yellow;
+        height: 100%;
+        width: 33%;
+        display: block;
+    }
+    
 }
 
-@media (min-width: 480px) and (max-width: 1024px) {
+
+@media (min-width: 480px) and (max-width: 1024px) {      /* MEDIUM */ 
     body { 
-        background-color: green;
         font-size: 20px;
     }
     #small {                   
@@ -31,12 +66,48 @@
     #m {display: none;
     }
     #s {display: none;
+    }   
+    .container {
+        height: 100%;
+        width: 100%;
+        margin: 10px auto;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        border-style: solid;
     }
+    .block1 {
+        background: rgb(252, 166, 8);
+        height: 100%;
+        width: 66%;
+        position: relative;
+        border: 1px;
+        border-color:black;
+    }
+    .block2 {
+        background: rgb(247, 203, 123);
+        height: 100%;
+        width: 34%;
+        position:relative;
+        flex-wrap: wrap;
+        border: 1px;
+        border-color:black;
+    }
+    .block3 {`  
+        background: rgb(134, 95, 21);
+        height: 100%;
+        width: 100%;
+        position:relative;
+        flex-wrap: wrap;
+        border: 1px;
+        border-color:black;
+}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {                /* LARGE*/ 
     body { 
-        background-color: blue;
+        background-color: white;
         font-size: 35px;
     }
     #medium {                   
@@ -49,4 +120,31 @@
     }
     #s {display: none;
     }
+    .container {
+        height: 100%;
+        width: 100%;
+        margin: 10px auto;
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+    }
+    .block1 {
+        background: green;  
+        height: 100%;
+        width: 33%;
+        display: flex;
+    }
+    .block2 {
+        background: rgb(65, 233, 65);
+        height: 100%;
+        width: 33%;
+        display: flex;
+    }
+    .block3 {
+        background: rgb(10, 58, 10);
+        height: 100%;
+        width: 33%;
+        display: flex;
 }   
+}
