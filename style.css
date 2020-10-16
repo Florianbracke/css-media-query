@@ -1,0 +1,52 @@
+
+
+@media (max-width: 480px) {
+    body { 
+        background-color: red;
+        font-size: 10px;
+    }
+    #medium {                   
+        display: none;
+      }
+    #large {
+        display: none;
+    }
+    #m {display: none;
+    }
+    #l {display: none;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 1024px) {
+    body { 
+        background-color: green;
+        font-size: 20px;
+    }
+    #small {                   
+        display: none;
+      }
+    #large {
+        display: none;
+    }
+    #m {display: none;
+    }
+    #s {display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    body { 
+        background-color: blue;
+        font-size: 35px;
+    }
+    #medium {                   
+        display: none;
+      }
+    #small {
+        display: none;
+    }
+    #m {display: none;
+    }
+    #s {display: none;
+    }
+}   
